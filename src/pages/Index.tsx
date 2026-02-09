@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import { studioConfig } from "@/lib/studioConfig";
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import ReviewsSection from "@/components/ReviewsSection";
+import BookingForm from "@/components/BookingForm";
+import ContactMap from "@/components/ContactMap";
+import AIWidget from "@/components/AIWidget";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = `${studioConfig.NOME_STUDIO} | Dentista a ${studioConfig.CITTA}`;
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute("content",
+        `Studio dentistico a ${studioConfig.CITTA}. ${studioConfig.RATING} stelle su Google con ${studioConfig.NUM_RECENSIONI} recensioni. Prenota la tua visita.`
+      );
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main>
+      <HeroSection />
+      <ServicesSection />
+      <WhyChooseUs />
+      <ReviewsSection />
+      <BookingForm />
+      <ContactMap />
+      <Footer />
+      <AIWidget />
+    </main>
   );
 };
 
