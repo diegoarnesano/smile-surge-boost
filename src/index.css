@@ -100,6 +100,12 @@
   }
 }
 
+@layer components {
+  .form-input {
+    @apply w-full rounded-md border border-border bg-background px-4 py-3 text-base text-foreground placeholder:text-muted-foreground transition-colors focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
