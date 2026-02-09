@@ -6,7 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import ReviewsSection from "@/components/ReviewsSection";
 import BookingForm from "@/components/BookingForm";
 import ContactMap from "@/components/ContactMap";
-import AIWidget from "@/components/AIWidget";
+import WhatsAppButton from "@/components/AIWidget";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -29,7 +29,7 @@ const Index = () => {
       <BookingForm />
       <ContactMap />
       <Footer />
-      <AIWidget />
+      <WhatsAppButton />
     </main>
   );
 };
