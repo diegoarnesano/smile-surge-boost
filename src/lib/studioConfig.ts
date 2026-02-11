@@ -9,7 +9,7 @@ export const studioConfig = {
   EMAIL: "",
   LINK_MAPS: "https://www.google.com/maps/search/?api=1&query=Studio%20Dentistico%20Associato%20Dottori%20A.Prenesti%20e%20V.%20Zugan&query_place_id=ChIJqU1ZurLDhkcRw2cELkeWHhE",
   ORARI: {
-    feriali: "Lun-Ven: 9:00 - 12:00, 14:00 - 19:00",
+    feriali: "Lun: 09:00–12:00, 14:00–19:00 · Mar: 09:00–12:00, 14:00–18:00 · Mer: 09:00–12:00, 14:00–17:00 · Gio: 09:00–12:00, 14:00–18:00 · Ven: 09:00–12:00, 14:00–19:00",
     sabato: "Sab: Chiuso",
     domenica: "Dom: Chiuso",
   },
@@ -25,6 +25,12 @@ export const studioConfig = {
       stelle: 5,
       testo: "Bravi professionisti, onesti e pronti ad aiutarti in caso di necessità.",
       data: "2024-12-08",
+    },
+    {
+      nome: "Elisa Magno",
+      stelle: 4,
+      testo: null,
+      data: "2024-10-15",
     },
   ],
 };
